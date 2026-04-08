@@ -22,5 +22,10 @@ def logarithm(a ,b):
 def exponent(a, b):
     return a**b
 
+def hypotenuse(a, b):
+    math.hypot(a, b)
 
-
+def square_root(a):
+    if a < 0:
+        raise ValueError("a cannot be less than 0")
+    return math.sqrt(a)
